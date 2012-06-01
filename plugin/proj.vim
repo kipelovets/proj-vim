@@ -123,6 +123,7 @@ endfunction
 function! s:OpenProject(name, rBrowser)
   if s:GetProject(a:name)
     call s:RefreshCurrent(a:rBrowser)
+    let &titlestring = a:name
   end
 endfunction
 
